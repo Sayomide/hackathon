@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  padding:0;margin:0;
+}
+body {
+  background:red;
+  width:100%;
+}
+.first {
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items:center;
+  height:50px;
+  background:#1C181D;
+  color:white;
+  overflow:hidden;
+}
+.firstsvg{
+  display:none;
+}
+.secondsvg{
+  display:block;
+  margin-left:10px;
+}
+
+.first .searchbar {
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+
+.searchbar svg {
+  width: 18px;
+  height: 18px;
+  position:relative;
+  left: 30px; 
+}
+.searchbar input {
+  background:#322F33;
+  padding:9px;
+  text-indent: 22px;
+  border-radius:10px;
+  border:1px solid #616161;
+  outline:none;
+  font-size:1rem;
+  width:85%;
+}
+.searchbar input:hover {
+  border:1px solid #E3E3E3;
+}
+.searchbar input:active {
+  border:2px solid #E3E3E3;
+}
+.searchbar input:focus {
+  border:3px solid #E3E3E3;
+}
+.searchbar input::placeholder {
+  padding-left:20px;
+  color:#E3E3E3;
+}
+.first .notification{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  align-items:space-around;
+  margin-right:15px;
+}
+.notification svg {
+  margin:10px;
+}
+.notification .dcall {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.dcall p {
+  display:none;
+}
+.dcall span {
+  background:#33FF99;
+  padding:5px;
+  border-radius:8px;
+  color:#322F33;
+}
+
+
+
+
+
+
+
+
+  @media screen and (min-width: 768px) {
+.firstsvg{
+  display:block;
+  margin-left:20px;
+}
+.secondsvg{
+  display:none;
+}
+.dcall {
+  background:black;
+  padding:10px;
+}
+.dcall p {
+  display:block;
+  font-size:1rem;
+  margin-right:5px;
+}
+.notification {
+  width:40%;
+}
+    
+    
+    
+    
+   
+ }
